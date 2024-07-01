@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI CALCULATIONS</h1>
+    <form action="" method="post">
+        {%csrf_token%}
+
+        <div>
+            <label for="">Enter the Weight in Kg</label>
+            <input type="text" placeholder="weight" name="wbox">
+            
+        </div>
+        <div>
+            <label for="">Enter the height in Cm </label>
+            <input type="text" placeholder="height" name="hbox">
+        </div>
+        <div>
+            <button type="submit">Bmi</button>
+            output={{data}}
+        </div>
+
+    </form>
+</body>
+</html>
